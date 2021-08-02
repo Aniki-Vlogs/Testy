@@ -1,0 +1,125 @@
+.screenload {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	background: white;
+	transition: 1.2s ease;
+	z-index: +100;
+}
+
+.screenload .sbl-screen-load {
+	position: absolute;
+	font-size: 32px;
+	color: #ffcc31;
+	animation: animateStar 3s linear infinite;
+}
+
+@keyframes animateStar {
+	50%{
+		font-size: 64px;
+		transform: rotateZ(0deg);
+	}
+	100%{
+		transform: rotateZ(-360deg);
+	}
+}
+
+.screenload .loader {
+	position: relative;
+	width: 130px;
+	height: 130px;
+	overflow: hidden;
+	animation: animate0 8s linear infinite;
+	border-radius: 32px;
+}
+@keyframes animate0 {
+	100%{
+		transform: rotateZ(-360deg);
+	}
+}
+
+.screenload .loader span {
+	position: absolute;
+	display: block;
+}
+
+.screenload .loader span:nth-child(1) {
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 20px;
+	background: linear-gradient(to right,transparent,#FFCC31);
+	animation: animate1 1s linear infinite;
+	animation-delay:  0s;
+	border-radius: 2pc;
+}
+@keyframes animate1 {
+	0%{
+		left:-100%;
+	}
+	100%{
+		left: 100%;
+	}
+}
+
+.screenload .loader span:nth-child(3) {
+	bottom: 0;
+	left: -100%;
+	width: 100%;
+	height: 20px;
+	background: linear-gradient(to left,transparent,#FFCC31);
+	animation: animate3 1s linear infinite;
+	animation-delay:  0s;
+	border-radius: 2pc;
+}
+@keyframes animate3 {
+	0%{
+		left: 100%;
+	}
+	100%{
+		left:-100%;
+	}
+}
+
+.screenload .loader span:nth-child(2) {
+	top: -100%;
+	left: 0;
+	width: 20px;
+	height: 100%;
+	background: linear-gradient(to top,transparent,#FFCC31);
+	animation: animate2 1s linear infinite;
+	animation-delay:  0.5s;
+	border-radius: 2pc;
+}
+@keyframes animate2 {
+	0%{
+		top:100%;
+	}
+	100%{
+		top:-100%;
+	}
+}
+
+.screenload .loader span:nth-child(4) {
+	bottom: -100%;
+	right: 0;
+	width: 20px;
+	height: 100%;
+	background: linear-gradient(to bottom,transparent,#FFCC31);
+	animation: animate4 1s linear infinite;
+	animation-delay:  0.5s;
+	border-radius: 2pc;
+}
+@keyframes animate4 {
+	0%{
+		bottom:100%;
+	}
+	100%{
+		bottom:-100%;
+	}
+}

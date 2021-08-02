@@ -1,0 +1,107 @@
+@import url('estilos.css');
+
+.pagina {
+	padding-bottom: 8in;
+	background: #f8f8f8;
+}
+
+/* HEADER */
+header[class="communique"] {
+	position: relative;
+	display: grid;
+	grid-template-columns: 100px 1fr 100px;
+	height: 100px;
+	background: #FF0048;
+	border-bottom: solid 8px #0000000f;
+	box-shadow: 0 4px 8px #0000002f;
+	user-select: none;
+}
+
+header[class="communique"] .sbl-return-2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 52px;
+}
+
+header[class="communique"] h1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 48px;
+	font-family: 'century2';
+	text-shadow: 2px 2px #0000002f;
+}
+
+header[class="communique"] span {
+	margin-right: 10px;
+	color: white;
+	font-size: 48px;
+}
+
+@media only screen and (max-width: 640px) {
+	header[class="communique"] {
+		grid-template-columns: 1fr;
+	}
+	header[class="communique"] .sbl-return-2 {
+		padding: 8px;
+		position: absolute;
+		bottom: -96px;
+		left: 0;
+		transform: translateY(-50%);
+		font-size: 26px;
+		background: #FF0048;
+		border-bottom: solid 4px #0000000f;
+		border-radius: 0 4px 4px 0;
+		text-shadow: 2px 2px #0000002f;
+		box-shadow: 0 4px 4px #0000002f;
+	}
+}
+@media only screen and (max-width: 460px) {
+	header[class="communique"] h1 {
+		font-size: 32px;
+	}
+}
+
+/* SECTION DIVISION */
+.contenedor {
+	margin: 0 8px;
+}
+
+section {
+	margin: 32px auto;
+	padding: 24px 20px;
+	max-width: 1000px;
+	display: grid;
+	grid-gap: 8px;
+	background: white;
+	box-shadow: 4px 8px 4px #00000010;
+	border-radius: 4px;
+}
+
+/* GRACIAS POR ESTAR AQUÍ */
+.gracias-por-estar-aqui {
+	border: solid 4px #FF0048bf;
+	animation: gracias-por-estar-aqui 1.6s linear infinite;
+}
+@keyframes gracias-por-estar-aqui {
+	50% {
+		border-color: transparent;
+	}
+}
+
+.gracias-por-estar-aqui h2 {
+	color: #7f7f7f;
+	font-size: 30px;
+	font-family: 'century2';
+	text-align: center;
+}
+
+.gracias-por-estar-aqui p {
+	color: #7f7f7f;
+	font-size: 20px;
+	font-family: 'century2';
+	text-align: justify-all;	
+}

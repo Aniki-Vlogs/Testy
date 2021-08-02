@@ -1,0 +1,110 @@
+@import url('symbols.css');
+@import url('modulos/scroll.css');
+@import url('modulos/screenload.css');
+@import url('modulos/info.css');
+@import url('modulos/cabezera.css');
+@import url('modulos/principal.css');
+@import url('modulos/apertura.css');
+@import url('modulos/pre-ingreso.css');
+@import url('modulos/salto-de-area.css');
+@import url('modulos/pie-de-pagina.css');
+/*@import url('modulos/');*/
+
+@font-face {font-family: euphemia;src: url('fonts-t/euphemia.ttf')}
+@font-face {font-family: century;src: url('fonts-t/century-gothic-regular.TTF')}
+@font-face {font-family: century2;src: url('fonts-t/century-gothic-bold.TTF')}
+@font-face {font-family: roboto;src: url('fonts-t/roboto-regular.ttf')}
+@font-face {font-family: roboto2;src: url('fonts-t/roboto-bold.ttf')}
+@font-face {font-family: montserrat;src: url('fonts-t/montserrat-regular.ttf')}
+@font-face {font-family: montserrat2;src: url('fonts-t/montserrat-bold.ttf')}
+@font-face {font-family: ahg;src: url('fonts-t/ahg-regular.ttf')}
+@font-face {font-family: ahg2;src: url('fonts-t/ahg-bold.ttf')}
+@font-face {font-family: ls;src: url('fonts-t/lucida-sans-regular.TTF')}
+@font-face {font-family: ls2;src: url('fonts-t/lucida-sans-bold.TTF')}
+@font-face {font-family: lst;src: url('fonts-t/lucida-sans-typewritter-regular.TTF')}
+@font-face {font-family: lst2;src: url('fonts-t/lucida-sans-typewritter-bold.TTF')}
+@font-face {font-family: myriad-pro;src: url('fonts-t/myriad-pro-regular.otf')}
+@font-face {font-family: myriad-pro2;src: url('fonts-t/myriad-pro-bold.otf')}
+@font-face {font-family: myriad-web;src: url('fonts-t/myriad-web-regular.ttf')}
+@font-face {font-family: myriad-web2;src: url('fonts-t/myriad-web-bold.ttf')}
+@font-face {font-family: jbm;src: url('fonts-t/jbm-regular.ttf')}
+@font-face {font-family: geo;src: url('fonts-t/geo-regular.ttf')}
+@font-face {font-family: ssp;src: url('fonts-t/source-sans-pro-regular.ttf')}
+/*@font-face {font-family: '((name))';src: url('((path))');}*/
+
+*,*::before,*::after {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	outline: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+:root {
+	--black1: black;
+	--white1: white;
+	--anikiColor1: #ffb432;
+	--anikiColor2: #ffcc32;
+	--arcoirisColor: linear-gradient(90deg,#00ccff,#ff0048,#f2ff4d,#00ccff);
+	--arcoirisTime1: arcoirisAnimation 8s linear infinite;
+	--arcoirisTime2: arcoirisAnimation 16s linear infinite;
+}
+@keyframes arcoirisAnimation {to{background-position: 100vw;}}
+
+.locolap img {
+	width: 100%;
+}
+
+
+.explanation-ctn {
+	padding: 12px 8px;
+	display: grid;
+	grid-gap: 8px;
+	background-image: url('./../img/body-2.png');
+	background-size: 2in;
+}
+@media only screen and (min-width: 1000px) {
+	.explanation-ctn {
+		padding: 16px;
+		grid-template-columns: repeat(2,1fr);
+		grid-gap: 16px;
+	}
+}
+
+.explanation {
+	margin: 0 auto;
+	padding: 16px;
+	background: #ffffff;
+	background-image: url('./../img/body.png');
+	background-size: 2in;
+	border-radius: 4px;
+}
+
+.explanation h3,
+.explanation p,
+.explanation i {
+	margin-bottom: 8px;
+	color: #202020;
+	font-family: 'ls2';
+	font-size: 18px;
+}
+
+.explanation h3 {
+	padding: 8px;
+	color: white;
+	font-size: 22px;
+	font-weight: 700;
+	text-align: center;
+	background: #00aaff;
+	border-radius: 4px;
+}
+
+.explanation p,
+.explanation i, {
+	text-align: justify;
+}
+
+.explanation i {
+	font-family: 'ls';
+	background: #FFFF00af;
+}

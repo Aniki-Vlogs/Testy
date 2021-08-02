@@ -1,0 +1,135 @@
+@font-face {
+  font-family: 'symbols';
+  src:  url('fonts/symbols.eot?y9py2a');
+  src:  url('fonts/symbols.eot?y9py2a#iefix') format('embedded-opentype'),
+    url('fonts/symbols.ttf?y9py2a') format('truetype'),
+    url('fonts/symbols.woff?y9py2a') format('woff'),
+    url('fonts/symbols.svg?y9py2a#symbols') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="sbl-"], [class*=" sbl-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'symbols' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sbl-go-to:before {
+  content: "\e91c";
+}
+.sbl-go-to-2:before {
+  content: "\e91d";
+}
+.sbl-link:before {
+  content: "\e91e";
+}
+.sbl-reload-left:before {
+  content: "\e91f";
+}
+.sbl-reload-right:before {
+  content: "\e920";
+}
+.sbl-external-link:before {
+  content: "\e921";
+}
+.sbl-external-link-2:before {
+  content: "\e922";
+}
+.sbl-external-link-3:before {
+  content: "\e923";
+}
+.sbl-bookmark-regular:before {
+  content: "\e911";
+}
+.sbl-bookmark-solid:before {
+  content: "\e912";
+}
+.sbl-donwload-2:before {
+  content: "\e913";
+}
+.sbl-eye:before {
+  content: "\e914";
+}
+.sbl-eye-slash:before {
+  content: "\e915";
+}
+.sbl-info:before {
+  content: "\e916";
+}
+.sbl-letter:before {
+  content: "\e917";
+}
+.sbl-pinear:before {
+  content: "\e918";
+}
+.sbl-return:before {
+  content: "\e919";
+}
+.sbl-return-2:before {
+  content: "\e91a";
+}
+.sbl-bell:before {
+  content: "\e91b";
+}
+.sbl-communique:before {
+  content: "\e910";
+}
+.sbl-principal:before {
+  content: "\e907";
+}
+.sbl-menu:before {
+  content: "\e908";
+}
+.sbl-screen-load:before {
+  content: "\e909";
+}
+.sbl-brands-planet-minecraft:before {
+  content: "\e90a";
+}
+.sbl-brands-discord:before {
+  content: "\e90b";
+}
+.sbl-brands-facebook:before {
+  content: "\e90c";
+}
+.sbl-brands-patreon:before {
+  content: "\e90d";
+}
+.sbl-brands-pinterest:before {
+  content: "\e90e";
+}
+.sbl-brands-youtube:before {
+  content: "\e90f";
+}
+.sbl-area-adventure-maps:before {
+  content: "\e904";
+}
+.sbl-area-redstone:before {
+  content: "\e905";
+}
+.sbl-area-commands:before {
+  content: "\e906";
+}
+.sbl-area-data-packs:before {
+  content: "\e902";
+}
+.sbl-area-resource-packs:before {
+  content: "\e903";
+}
+.sbl-area-construction:before {
+  content: "\e900";
+}
+.sbl-area-decoration:before {
+  content: "\e901";
+}

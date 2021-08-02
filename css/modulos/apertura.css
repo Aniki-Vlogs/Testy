@@ -1,0 +1,46 @@
+.ctn-apertura {
+	margin-top: 60px;
+	width: 100%;
+	height: calc(100vh - 60px);
+	transition: 0.4s all;
+	overflow: hidden;
+}
+
+.apertura {
+	display: grid;
+	grid-template-columns: repeat(2,100%);
+	grid-template-rows: 100%;
+	height: 100%;
+	animation: slider 90s linear infinite;
+}
+
+@keyframes slider {
+	0% {
+		transform: translateX(0);
+	}
+	48% {
+		transform: translateX(0);
+	}
+	50% {
+		transform: translateX(-100%);
+	}
+	98% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.ctn-apertura {
+		height: 60vw;
+	}
+}
+
+.apertura img {
+	object-position: center;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
